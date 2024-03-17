@@ -1,4 +1,3 @@
-// problem 1.
 #include <stdio.h>
 #include <math.h>
 int main()
@@ -30,16 +29,16 @@ int main()
     float sum_of_odd_index = 0;
     for (int i = 1, g = 0; i < 12; i += 2, g++) // This loop is use for find-out the sum of even and odd value index.
     {
-        if (g % 2 == 0) // Check the even index.
+        if (g % 2 == 0) // Check the even index and sum all value of the even index.
         {
             sum_of_even_index += arr[g];
         }
-        else // Or odd Index.
+        else // Or odd Index and sum all value of the even index.
         {
             sum_of_odd_index += arr[g];
         }
     }
-    sinX = sum_of_even_index - sum_of_odd_index;// 
+    sinX = sum_of_even_index - sum_of_odd_index; // Calculate Sinx by adding sum of even and odd index.
     printf("SinX=%.3f\n", sinX);
     return 0;
 }
