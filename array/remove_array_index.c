@@ -18,7 +18,6 @@ int main()
         array[i]=array[i+1];
     }
     n--;
-
     for (int i = 0; i < n; i++)
     {
         printf("%d ",array[i]);
